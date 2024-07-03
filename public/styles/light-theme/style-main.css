@@ -1,0 +1,263 @@
+@import 'colors.css';
+@import url('fonts.css');
+
+body {
+  overflow-x: scroll;
+	display: block;
+}
+
+/* Изменяет ширину скроллбара */
+::-webkit-scrollbar {
+  width: 12px; /* Ширина скроллбара */
+}
+
+/* Изменяет цвет и форму скроллбара */
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-blue); /* Цвет ползунка скроллбара */
+  border-radius: 6px; /* Скругление углов ползунка */
+}
+
+/* Изменяет цвет фона скроллбара */
+::-webkit-scrollbar-track {
+  background-color: var(--secondary-lighter); /* Цвет фона скроллбара */
+}
+
+.btn:focus,.btn:active {
+	outline: none !important;
+	box-shadow: none;
+}
+
+.navbar{
+	background-color: white;
+}
+
+.navbar-brand{
+	font-family: var(--font-rubik-medium);
+	font-size: 20px;
+}
+
+.pagename{
+	font-family: var(--font-rubik-medium);
+	font-size: 28px;
+}
+
+.filters{
+	font-family: var(--font-raleway-semibold);
+	font-size: 14px;
+}
+
+.filters:hover{
+	background-color: var(--secondary-lighter);
+	outline: none !important;
+  box-shadow: none !important;
+}
+.filters:active{
+	background-color: var(--secondary);
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.drawerbtns{
+	border-radius: 12px;
+}
+.drawerbtns:hover{
+	background-color: var(--secondary-lighter);
+}
+.drawerbtns:active{
+	background-color: var(--secondary);
+}
+
+.users{
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.user{
+	font-family: var(--font-rubik-regular);
+	font-size: 14px;
+}
+.searchinpt{
+	min-width: 318px;
+}
+.cursor-crosshair {
+  cursor: crosshair;
+}
+
+#cancelsvg{
+	background-color: none;
+	transform: scale(0.5,0.5);
+}
+
+#adduserintoscenario{
+	cursor: pointer;
+}
+.drawer {
+	position: fixed;
+	top: 45px; /* Высота navbar */
+	left: 0;
+	background-color: white;
+	width: 250px;
+	height: calc(100vh - 56px); /* Высота равна высоте viewport минус высота navbar */
+	padding: 1rem;
+	overflow-y: auto;
+	font-family: var(--font-rubik-regular);
+	font-size: 16px;
+}
+
+.drawerbtn:active {
+	background-color: var(--active);
+  border-color: var(--main-blue) !important;
+  box-shadow: 0 0 5px rgba(var(--main-blue) , 0.5) !important;
+}
+
+.drawerbtn:focus {
+  border-color: var(--main-blue) !important;
+  box-shadow: 0 0 5px rgba(var(--main-blue) , 0.5) !important;
+}
+
+
+.container-fluid.mt-5.events {
+	margin-top: 6.8rem !important;
+	margin-bottom: 3rem !important;
+}
+
+.events {
+	margin-left: 270px;
+	margin-right: 2rem;
+}
+
+
+.modal-content{
+	border-radius: 16px !important ; 
+}
+
+
+.event {
+	flex-wrap: wrap;
+  justify-content: space-between;
+	border-radius: 20px;
+	width: 14%;
+  background-color: var(--secondary-lighter);
+  height: 0%;
+  margin-right: 2.5rem; /* Отступ справа */
+  margin-bottom: 5rem; /* Отступ снизу */
+}
+
+.eventtitle{
+	font-family: var(--font-rubik-medium);
+	font-size: 20px;
+}
+
+.event:last-child {
+  margin-right: 0; /* Убираем отступ справа для последнего элемента */
+}
+
+.scenario{
+	border-radius: 12px;
+	background-color: white;
+	margin-top: 0px !important;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+}
+
+.title{
+	font-family: var(--font-rubik-regular);
+	font-size: 14px;
+}
+
+.date{
+	font-family: var(--font-rubik-regular);
+	font-size: 12px;
+}
+
+.comment{
+	font-family: var(--font-rubik-regular);
+	font-size: 12px;
+}
+
+.attachment{
+	font-family: var(--font-rubik-regular);
+	font-size: 12px;
+}
+
+.adds{
+	border-radius: 12px;
+}
+
+.adds:hover{
+	background-color: var(--secondary) !important;
+}
+
+.adds:active{
+	background-color: var(--default-border) !important;
+}
+
+.addicon[src$=".svg"]{
+	filter: brightness(0) saturate(100%);
+}
+
+.addtext{
+	font-family: var(--font-raleway-semibold);
+	font-size: 14px;
+}
+
+#useravatar{
+	width: 40px; 
+	height: 40px; 
+	background-color: var(--secondary); 
+	border-radius: 100%;
+	font-family: var(--font-rubik-regular);
+	font-size: 15px;
+}
+
+.useravatars{
+	width: 30px; 
+	height: 30px; 
+	background-color: var(--secondary); 
+	border-radius: 100%;
+}
+.useravatitle{
+	font-family: var(--font-rubik-regular);
+	font-size: 12px;
+}
+
+.drawericons{
+	width: 20px !important; 
+	height: 20px !important;
+}
+
+.eventsettings[src$=".svg"]{
+	width: 20px !important; 
+	height: 20px !important;
+	filter: brightness(0) saturate(100%);
+}
+.eventsettings[src$=".svg"]:hover{
+	cursor: pointer;
+	filter: none;
+}
+
+
+.photo-container {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	margin: 10px;
+	cursor: pointer;
+}
+
+.photo-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: rotate(90deg);
+}
+
+.modal-custom {
+  width: auto;
+  max-width: 80vw;
+  max-height: 80vh;
+  min-width: 240px;
+  min-height: 135px;
+}
+

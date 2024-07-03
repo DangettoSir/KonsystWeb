@@ -1,0 +1,50 @@
+	@font-face {
+		font-family: 'RalewayBold';
+		src: url('../../assets/fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'RalewayRegular';
+		src: url('../../assets/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'RalewaySemibold';
+		src: url('../../assets/fonts/Raleway/Raleway-SemiBold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'RubikMedium';
+		src: url('../../assets/fonts/Rubik/Rubik-Medium.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'RubikRegular';
+		src: url('../../assets/fonts/Rubik/Rubik-Regular.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	@font-face {
+		font-family: 'RubikSemibold';
+		src: url('../../assets/fonts/Rubik/Rubik-SemiBold.ttf') format('truetype');
+		font-weight: normal;
+		font-style: normal;
+	}
+
+	:root {
+		--font-raleway-bold: 'RalewayBold', sans-serif;
+		--font-raleway-regular: 'RalewayRegular', sans-serif;
+		--font-raleway-semibold: 'RalewaySemibold', sans-serif;
+		--font-rubik-medium: 'RubikMedium', sans-serif;
+		--font-rubik-regular: 'RubikRegular', sans-serif;
+		--font-rubik-semibold: 'RubikSemibold', sans-serif;
+	}

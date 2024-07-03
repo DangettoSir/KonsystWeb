@@ -1,0 +1,156 @@
+@import 'colors.css';
+@import url('fonts.css');
+
+.auth-spinner {
+	position: fixed;
+	top: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: white;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease;
+}
+
+.auth-success-gif{
+	display: none;
+}
+
+.auth-spinner.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.auth-spinner .spinner-border {
+	width: 30px;
+	height: 30px;
+	display: block;
+	color: var(--main-blue);
+}
+
+.spinnerhide{
+	display: none;
+	opacity: 0;
+}
+
+.auth-spinner.expanded {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth-spinner.expanded .spinner-border {
+	display: none;
+
+}
+
+.auth-spinner.expanded .auth-success-gif {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	display: none;
+}
+
+.auth-spinner.expanded .auth-success-gif img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.auth-spinner.expanded.show-gif .auth-success-gif {
+	display: block;
+}
+
+.auth-spinner.hide {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+
+h3{
+	font-family: var(--font-rubik-semibold)
+}
+
+label{
+	font-family: var(--font-rubik-regular)
+}
+
+input{
+	font-family: var(--font-raleway-regular);
+}
+
+
+
+.auth{
+	min-height: 52px;
+	background-color: var(--main-blue);
+	border-radius: 12px;
+	border: none;
+}
+
+
+.auth:disabled{
+	background-color: var(--disabled-btn);
+}
+
+.auth:hover{
+	background-color: var(--active);
+}
+
+.auth:active {
+	background-color: var(--active);
+  border-color: var(--main-blue) !important;
+  box-shadow: 0 0 5px rgba(var(--main-blue) , 0.5) !important;
+}
+
+.auth:focus {
+  border-color: var(--main-blue) !important;
+  box-shadow: 0 0 5px rgba(var(--main-blue) , 0.5) !important;
+}
+
+.inputs{
+	min-height: 41px;
+	border-radius: 12px;
+}
+
+.inputs:hover{
+	min-height: 41px;
+	border-radius: 12px;
+	border-color: var(--active); 
+}
+
+.inputs:active{
+	min-height: 41px;
+	border-radius: 12px;
+	border-color: var(--main-blue); 
+}
+
+.inputs:focus {
+  outline: none !important;
+	border-color: var(--main-blue) !important;
+	box-shadow: 0 0 5px rgba(var(--active), 0.5) !important;
+  border-color: inherit !important;
+}
+
+.time {
+
+  background-image: url("../../assets/icons/time.svg");
+}
+
+.comment{
+	src: url("../../assets/icons/comments.svg");
+}
+
+.attachment{
+	src: url("../../assets/icons/attachment.svg");
+}
